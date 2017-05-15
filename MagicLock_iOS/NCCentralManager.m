@@ -107,7 +107,8 @@ static NCCentralManager *_bluetoothManager = nil;
 
 - (void)peripheral:(CBPeripheral *)peripheral didReadRSSI:(NSNumber *)RSSI error:(nullable NSError *)error {
     float d = NCDistWithRSSI(RSSI);
-    NSLog(@"%.2f",f);
+    
+    NSLog(@"%.2f",d);
     [self.peripheral writeValue:[NSKeyedArchiver archivedDataWithRootObject:@[[UIDevice currentDevice].name, RSSI]] forCharacteristic:self.writeCharacteristic type:CBCharacteristicWriteWithResponse];
 }
 

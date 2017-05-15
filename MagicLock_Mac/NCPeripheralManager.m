@@ -14,6 +14,10 @@
 #define NCPERIPHERALMANAGER_MAKESURECOUNT   3
 #define NCPERIPHERALMANAGER_DISTANCE_KEY    @"NCPERIPHERALMANAGER_DISTANCE_KEY"
 
+#define NCPERIPHERALMANAGER_DEFAULT_LOCKDISTANCE    5
+#define NCPERIPHERALMANAGER_MAX_LOCKDISTANCE    10
+#define NCPERIPHERALMANAGER_MIN_LOCKDISTANCE    2
+
 @interface NCPeripheralManager ()<CBPeripheralManagerDelegate>
 
 @property (nonatomic, strong) CBPeripheralManager *manager;
@@ -22,6 +26,8 @@
 
 @property (nonatomic, strong) NSString *phoneName;
 @property (nonatomic, strong) NSString *realDistance;
+
+@property (nonatomic, strong) NSTimer *timeoutTimer;
 
 @end
 
@@ -42,6 +48,9 @@ static NCPeripheralManager *_peripheralManager = nil;
     self = [super init];
     if (self) {
         self.lockDistance = [[[NSUserDefaults standardUserDefaults] objectForKey:NCPERIPHERALMANAGER_DISTANCE_KEY] integerValue];
+        if (self.lockDistance==0) {
+            self.lockDistance = NCPERIPHERALMANAGER_DEFAULT_LOCKDISTANCE;
+        }
     }
     return self;
 }
@@ -60,11 +69,11 @@ static NCPeripheralManager *_peripheralManager = nil;
 
 - (void)setLockDistance:(NSInteger)lockDistance {
     _lockDistance = lockDistance;
-    if (_lockDistance<2) {
-        _lockDistance = 2;
+    if (_lockDistance<NCPERIPHERALMANAGER_MIN_LOCKDISTANCE) {
+        _lockDistance = NCPERIPHERALMANAGER_MIN_LOCKDISTANCE;
     }
-    if (_lockDistance>10) {
-        _lockDistance = 10;
+    if (_lockDistance>NCPERIPHERALMANAGER_MAX_LOCKDISTANCE) {
+        _lockDistance = NCPERIPHERALMANAGER_MAX_LOCKDISTANCE;
     }
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setObject:@(_lockDistance) forKey:NCPERIPHERALMANAGER_DISTANCE_KEY];
@@ -119,6 +128,12 @@ static NCPeripheralManager *_peripheralManager = nil;
 }
 
 - (void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didUnsubscribeFromCharacteristic:(CBCharacteristic *)characteristic {
+    [self deviceDidDisconnect];
+}
+
+- (void)deviceDidDisconnect {
+    [self.timeoutTimer invalidate];
+    self.timeoutTimer = nil;
     self.heartbeatCharacteristic = nil;
     self.phoneName = nil;
     self.realDistance = @"0米";
@@ -131,9 +146,18 @@ static NCPeripheralManager *_peripheralManager = nil;
 }
 
 - (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray<CBATTRequest *> *)requests {
-
     if (requests.count != 1) {
         return;
+    }
+    
+    if (self.heartbeatCharacteristic) {
+        [self.timeoutTimer invalidate];
+        self.timeoutTimer = nil;
+        self.timeoutTimer = [NSTimer scheduledTimerWithTimeInterval:3 repeats:NO block:^(NSTimer * _Nonnull timer) {
+            if (self.heartbeatCharacteristic) {
+                [self deviceDidDisconnect];
+            }
+        }];
     }
     
     NSData *data = [requests firstObject].value;
@@ -144,6 +168,7 @@ static NCPeripheralManager *_peripheralManager = nil;
     self.phoneName = [array objectAtIndex:0];
     NSNumber *RSSI = [array objectAtIndex:1];
     float d = NCDistWithRSSI(RSSI);
+    NSLog(@"%.2f",d);
     self.realDistance = [NSString stringWithFormat:@"%.2f米", d];
     if (d>=self.lockDistance) {
         if (self.makeSureFlag<0) {
