@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7A7E22D1EC9A7D6007A20D7 /* NCCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A7E22C1EC9A7D6007A20D7 /* NCCentralManager.m */; };
+		B7A7E2321EC9A87A007A20D7 /* NCMacLockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A7E22F1EC9A87A007A20D7 /* NCMacLockManager.m */; };
+		B7A7E2331EC9A87A007A20D7 /* NCPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A7E2311EC9A87A007A20D7 /* NCPeripheralManager.m */; };
+		B7CFE6741E960EE500C2086C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CFE6731E960EE500C2086C /* main.m */; };
+		B7CFE6771E960EE500C2086C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CFE6761E960EE500C2086C /* AppDelegate.m */; };
+		B7CFE67A1E960EE500C2086C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CFE6791E960EE500C2086C /* ViewController.m */; };
+		B7CFE67D1E960EE500C2086C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CFE67B1E960EE500C2086C /* Main.storyboard */; };
+		B7CFE67F1E960EE500C2086C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7CFE67E1E960EE500C2086C /* Assets.xcassets */; };
+		B7CFE6821E960EE500C2086C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CFE6801E960EE500C2086C /* LaunchScreen.storyboard */; };
+		B7CFE68F1E960F1300C2086C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CFE68E1E960F1300C2086C /* AppDelegate.m */; };
+		B7CFE6921E960F1300C2086C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CFE6911E960F1300C2086C /* main.m */; };
+		B7CFE6971E960F1300C2086C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7CFE6961E960F1300C2086C /* Assets.xcassets */; };
+		B7CFE69A1E960F1300C2086C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CFE6981E960F1300C2086C /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7A7E22A1EC9A783007A20D7 /* PublicMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicMacro.h; sourceTree = "<group>"; };
+		B7A7E22B1EC9A7D6007A20D7 /* NCCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCCentralManager.h; sourceTree = "<group>"; };
+		B7A7E22C1EC9A7D6007A20D7 /* NCCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCCentralManager.m; sourceTree = "<group>"; };
+		B7A7E22E1EC9A87A007A20D7 /* NCMacLockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMacLockManager.h; sourceTree = "<group>"; };
+		B7A7E22F1EC9A87A007A20D7 /* NCMacLockManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMacLockManager.m; sourceTree = "<group>"; };
+		B7A7E2301EC9A87A007A20D7 /* NCPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCPeripheralManager.h; sourceTree = "<group>"; };
+		B7A7E2311EC9A87A007A20D7 /* NCPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCPeripheralManager.m; sourceTree = "<group>"; };
+		B7CFE66F1E960EE500C2086C /* MagicLock_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicLock_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CFE6731E960EE500C2086C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7CFE6751E960EE500C2086C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7CFE6761E960EE500C2086C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7CFE6781E960EE500C2086C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B7CFE6791E960EE500C2086C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B7CFE67C1E960EE500C2086C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7CFE67E1E960EE500C2086C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7CFE6811E960EE500C2086C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7CFE6831E960EE500C2086C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7CFE68B1E960F1300C2086C /* MagicLock_Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicLock_Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CFE68D1E960F1300C2086C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7CFE68E1E960F1300C2086C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7CFE6911E960F1300C2086C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7CFE6961E960F1300C2086C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7CFE6991E960F1300C2086C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7CFE69B1E960F1300C2086C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7CFE66C1E960EE500C2086C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7CFE6881E960F1300C2086C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B770C35E1E99EAA200CB11D2 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				B7A7E22A1EC9A783007A20D7 /* PublicMacro.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		B7CFE6641E960EC000C2086C = {
+			isa = PBXGroup;
+			children = (
+				B7CFE6711E960EE500C2086C /* MagicLock_iOS */,
+				B7CFE68C1E960F1300C2086C /* MagicLock_Mac */,
+				B770C35E1E99EAA200CB11D2 /* Public */,
+				B7CFE6701E960EE500C2086C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7CFE6701E960EE500C2086C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7CFE66F1E960EE500C2086C /* MagicLock_iOS.app */,
+				B7CFE68B1E960F1300C2086C /* MagicLock_Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7CFE6711E960EE500C2086C /* MagicLock_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B7CFE6751E960EE500C2086C /* AppDelegate.h */,
+				B7CFE6761E960EE500C2086C /* AppDelegate.m */,
+				B7CFE6781E960EE500C2086C /* ViewController.h */,
+				B7CFE6791E960EE500C2086C /* ViewController.m */,
+				B7A7E22B1EC9A7D6007A20D7 /* NCCentralManager.h */,
+				B7A7E22C1EC9A7D6007A20D7 /* NCCentralManager.m */,
+				B7CFE67B1E960EE500C2086C /* Main.storyboard */,
+				B7CFE67E1E960EE500C2086C /* Assets.xcassets */,
+				B7CFE6801E960EE500C2086C /* LaunchScreen.storyboard */,
+				B7CFE6831E960EE500C2086C /* Info.plist */,
+				B7CFE6721E960EE500C2086C /* Supporting Files */,
+			);
+			path = MagicLock_iOS;
+			sourceTree = "<group>";
+		};
+		B7CFE6721E960EE500C2086C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7CFE6731E960EE500C2086C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7CFE68C1E960F1300C2086C /* MagicLock_Mac */ = {
+			isa = PBXGroup;
+			children = (
+				B7CFE68D1E960F1300C2086C /* AppDelegate.h */,
+				B7CFE68E1E960F1300C2086C /* AppDelegate.m */,
+				B7A7E22E1EC9A87A007A20D7 /* NCMacLockManager.h */,
+				B7A7E22F1EC9A87A007A20D7 /* NCMacLockManager.m */,
+				B7A7E2301EC9A87A007A20D7 /* NCPeripheralManager.h */,
+				B7A7E2311EC9A87A007A20D7 /* NCPeripheralManager.m */,
+				B7CFE6961E960F1300C2086C /* Assets.xcassets */,
+				B7CFE6981E960F1300C2086C /* Main.storyboard */,
+				B7CFE69B1E960F1300C2086C /* Info.plist */,
+				B7CFE6901E960F1300C2086C /* Supporting Files */,
+			);
+			path = MagicLock_Mac;
+			sourceTree = "<group>";
+		};
+		B7CFE6901E960F1300C2086C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7CFE6911E960F1300C2086C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7CFE66E1E960EE500C2086C /* MagicLock_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7CFE6841E960EE500C2086C /* Build configuration list for PBXNativeTarget "MagicLock_iOS" */;
+			buildPhases = (
+				B7CFE66B1E960EE500C2086C /* Sources */,
+				B7CFE66C1E960EE500C2086C /* Frameworks */,
+				B7CFE66D1E960EE500C2086C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicLock_iOS;
+			productName = MagicLock_iOS;
+			productReference = B7CFE66F1E960EE500C2086C /* MagicLock_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7CFE68A1E960F1300C2086C /* MagicLock_Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7CFE69C1E960F1300C2086C /* Build configuration list for PBXNativeTarget "MagicLock_Mac" */;
+			buildPhases = (
+				B7CFE6871E960F1300C2086C /* Sources */,
+				B7CFE6881E960F1300C2086C /* Frameworks */,
+				B7CFE6891E960F1300C2086C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicLock_Mac;
+			productName = MagicLock_Mac;
+			productReference = B7CFE68B1E960F1300C2086C /* MagicLock_Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7CFE6651E960EC000C2086C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					B7CFE66E1E960EE500C2086C = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 6H6853D8TF;
+						ProvisioningStyle = Automatic;
+					};
+					B7CFE68A1E960F1300C2086C = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 6H6853D8TF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B7CFE6681E960EC000C2086C /* Build configuration list for PBXProject "MagicLock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7CFE6641E960EC000C2086C;
+			productRefGroup = B7CFE6701E960EE500C2086C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7CFE66E1E960EE500C2086C /* MagicLock_iOS */,
+				B7CFE68A1E960F1300C2086C /* MagicLock_Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7CFE66D1E960EE500C2086C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CFE6821E960EE500C2086C /* LaunchScreen.storyboard in Resources */,
+				B7CFE67F1E960EE500C2086C /* Assets.xcassets in Resources */,
+				B7CFE67D1E960EE500C2086C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7CFE6891E960F1300C2086C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CFE6971E960F1300C2086C /* Assets.xcassets in Resources */,
+				B7CFE69A1E960F1300C2086C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7CFE66B1E960EE500C2086C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CFE67A1E960EE500C2086C /* ViewController.m in Sources */,
+				B7CFE6771E960EE500C2086C /* AppDelegate.m in Sources */,
+				B7A7E22D1EC9A7D6007A20D7 /* NCCentralManager.m in Sources */,
+				B7CFE6741E960EE500C2086C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7CFE6871E960F1300C2086C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CFE6921E960F1300C2086C /* main.m in Sources */,
+				B7CFE68F1E960F1300C2086C /* AppDelegate.m in Sources */,
+				B7A7E2321EC9A87A007A20D7 /* NCMacLockManager.m in Sources */,
+				B7A7E2331EC9A87A007A20D7 /* NCPeripheralManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7CFE67B1E960EE500C2086C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7CFE67C1E960EE500C2086C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7CFE6801E960EE500C2086C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7CFE6811E960EE500C2086C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B7CFE6981E960F1300C2086C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7CFE6991E960F1300C2086C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7CFE6691E960EC000C2086C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B7CFE66A1E960EC000C2086C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		B7CFE6851E960EE500C2086C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6H6853D8TF;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MagicLock_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncnk.MagicLock-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B7CFE6861E960EE500C2086C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6H6853D8TF;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MagicLock_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncnk.MagicLock-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7CFE69D1E960F1300C2086C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6H6853D8TF;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MagicLock_Mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncnk.MagicLock-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B7CFE69E1E960F1300C2086C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6H6853D8TF;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MagicLock_Mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncnk.MagicLock-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7CFE6681E960EC000C2086C /* Build configuration list for PBXProject "MagicLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7CFE6691E960EC000C2086C /* Debug */,
+				B7CFE66A1E960EC000C2086C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7CFE6841E960EE500C2086C /* Build configuration list for PBXNativeTarget "MagicLock_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7CFE6851E960EE500C2086C /* Debug */,
+				B7CFE6861E960EE500C2086C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7CFE69C1E960F1300C2086C /* Build configuration list for PBXNativeTarget "MagicLock_Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7CFE69D1E960F1300C2086C /* Debug */,
+				B7CFE69E1E960F1300C2086C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7CFE6651E960EC000C2086C /* Project object */;
+}
