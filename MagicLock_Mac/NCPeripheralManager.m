@@ -128,7 +128,14 @@ static NCPeripheralManager *_peripheralManager = nil;
 }
 
 - (void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didUnsubscribeFromCharacteristic:(CBCharacteristic *)characteristic {
-    [self deviceDidDisconnect];
+//    [self deviceDidDisconnect];
+    [self.timeoutTimer invalidate];
+    self.timeoutTimer = nil;
+    self.timeoutTimer = [NSTimer scheduledTimerWithTimeInterval:6 repeats:NO block:^(NSTimer * _Nonnull timer) {
+        if (self.heartbeatCharacteristic) {
+            [self deviceDidDisconnect];
+        }
+    }];
 }
 
 - (void)deviceDidDisconnect {
@@ -188,6 +195,7 @@ static NCPeripheralManager *_peripheralManager = nil;
     }
     if (self.makeSureFlag>=NCPERIPHERALMANAGER_MAKESURECOUNT) {
         [[NCMacLockManager sharedInstance] lock];
+        self.makeSureFlag = 0;
     }
     else if (self.makeSureFlag<=-NCPERIPHERALMANAGER_MAKESURECOUNT) {
         [[NCMacLockManager sharedInstance] unlock];
